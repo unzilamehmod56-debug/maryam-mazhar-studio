@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Montserrat", sans-serif;
+  
+  --color-primary: #735c00;
+  --color-primary-container: #d4af37;
+  --color-on-primary-container: #554300;
+  
+  --color-on-surface: #1a1c1c;
+  --color-on-surface-variant: #4d4635;
+  --color-background: #f9f9f9;
+  --color-surface: #f9f9f9;
+  
+  --color-surface-container-low: #f3f3f4;
+  --color-surface-container-lowest: #ffffff;
+  --color-outline-variant: #d0c5af;
+}
+
+/* Custom golden gradient text helper */
+.gold-gradient-text {
+  background: linear-gradient(to right, #735c00, #d4af37, #735c00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Luxury container shadow */
+.luxury-shadow {
+  box-shadow: 0px 20px 40px rgba(26, 26, 26, 0.05);
+}
+
+/* Hide scrollbar helper */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
